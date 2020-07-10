@@ -6,8 +6,10 @@ body { font-size: 16px; margin: 0; width: 100%; }
 /* base colors */
 body { color: #000; }
 h1, h2 { color: #696969; } /* DimGray */
+footer, footer a { color: #A9A9A9; }
+header a { color: #cccccc; }
 
-/* base header */
+/* base header and background img */
 header {
   padding: 2em 1em;
   background-image: url(/19366.jpg);
@@ -16,16 +18,16 @@ header {
   background-position: 0% 25%;
 }
 
-/* base footer */
-footer { font-size: 0.55rem; padding-bottom: 1em; }
-footer, footer a { color: #A9A9A9; }
+/* header background image attribution tag */
 header a {
   font-size: 0.5rem;
-  color: #cccccc;
   position: absolute;
   top: 1px;
   right: 1px;
 }
+
+/* base footer */
+footer { font-size: 0.55rem; padding-bottom: 1em; }
 
 /* standard fonts */
 h1 { font-family: cursive; } /* Microsoft Standard Script/Cursive */ /* Freestyle Script, Mistral, Monotype Corsiva */
@@ -62,8 +64,7 @@ article { width: 100%; }
 }
 
 #me {
-  width: 40%;
-  max-width: 30%;
+  width: 50%;
   border-radius: 25px;
 }
 
