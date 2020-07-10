@@ -14,10 +14,8 @@ header {
 }
 
 /* base footer */
-footer {
-  font-size: 0.55rem;
-  color: #A9A9A9;
-}
+footer { font-size: 0.55rem; padding-bottom: 1em; }
+footer, footer a { color: #A9A9A9; }
 
 /* standard fonts */
 h1 { font-family: cursive; } /* Microsoft Standard Script/Cursive */ /* Freestyle Script, Mistral, Monotype Corsiva */
@@ -34,7 +32,7 @@ header {
 /* headlines */
 h1 { font-size: 2.25rem; }
 h2 { font-size: 1.85rem; }
-h3 { font-size: 1.6rem; }
+h3 { font-size: 1.6rem; margin-bottom: 0.25em }
 h4 { margin-bottom: 0.25em; }
 
 /* article */
@@ -42,8 +40,7 @@ article { width: 100%; }
 
 .section {
   margin: 0 auto;
-  padding: 0 1rem;
-  /* width: 90%; */
+  padding: 0 1.5em;
   margin-bottom: 5em;
 }
 
@@ -53,6 +50,11 @@ article { width: 100%; }
 
 img.link {
   width: 100%;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
 }
 
 #me {
