@@ -96,10 +96,13 @@ article { width: 100%; }
   }
 
   .contacts {
-    max-width: 90%;
+    max-width: 80%;
   }
 
+  #me {
+    max-width: 40%;
+  }
   .logo {
-    height: 5rem;
+    height: 4.75rem;
   }
 }
