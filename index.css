@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/* base font size */
+body { font-size: 16px; }
+
+/* base colors */
+body { background-color: aliceblue; color: #000; }
+h1, h2 { color: #696969; } /* DimGray */
+footer { color: #A9A9A9; }
+
+/* standard fonts */
+h1 {   font-family: cursive; } /* Microsoft Standard Script/Cursive */ /* Freestyle Script, Mistral, Monotype Corsiva */
+h2, h3 { font-family: Georgia, 'Times New Roman', Times, serif; }
+
+/* ##### mobile specific style ##### */
+
+/* headlines */
+h1 { font-size: 2rem; }
+h2 { font-size: 1.4rem; }
+
+/* article */
+article { width: 100%; }
