@@ -32,7 +32,7 @@ footer { font-size: 0.55rem; padding-bottom: 1em; }
 /* standard fonts */
 h1 { font-family: cursive; } /* Microsoft Standard Script/Cursive */ /* Freestyle Script, Mistral, Monotype Corsiva */
 h2, h3 { font-family: Georgia, 'Times New Roman', Times, serif; }
-
+h4, p { font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
 /* ##### mobile specific style ##### */
 
 /* headlines */
@@ -63,6 +63,7 @@ article { width: 100%; }
   width: auto;
 }
 
+/* contact me photo */
 #me {
   width: 50%;
   border-radius: 25px;
@@ -76,4 +77,29 @@ article { width: 100%; }
   /* max-width: 50%; */ /* add this rule for portrait mode */
   display: flex;
   justify-content: space-around;
+}
+
+/* tablets and smaller laptops */
+@media (min-width: 481px) and (max-width: 1200px) {
+
+  /* increased font sizes */
+  header a { font-size: 0.7rem; }
+  h1 { font-size: 3.75rem; }
+  h2 { font-size: 3.25rem; }
+  h3 { font-size: 2.75rem; margin-bottom: 0.25em }
+  h4 { font-size: 1.15rem; }
+  p { font-size: 1.2rem; }
+  footer { font-size: 0.85rem; }
+
+  .link {
+    width: 50%;
+  }
+
+  .contacts {
+    max-width: 90%;
+  }
+
+  .logo {
+    height: 5rem;
+  }
 }
