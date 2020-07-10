@@ -24,7 +24,7 @@ h1 {   font-family: cursive; } /* Microsoft Standard Script/Cursive */ /* Freest
 h2, h3 { font-family: Georgia, 'Times New Roman', Times, serif; }
 
 /* push all text from left */
-header, footer, .section {
+header, footer {
   padding-left: 1rem;
 }
 
@@ -40,6 +40,7 @@ h3 { font-size: 1.6rem; }
 article { width: 100%; }
 
 .section {
+  margin: 0 auto;
   width: 90%;
   margin-bottom: 5em;
 }
