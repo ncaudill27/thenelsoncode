@@ -20,11 +20,11 @@ footer {
 }
 
 /* standard fonts */
-h1 {   font-family: cursive; } /* Microsoft Standard Script/Cursive */ /* Freestyle Script, Mistral, Monotype Corsiva */
+h1 { font-family: cursive; } /* Microsoft Standard Script/Cursive */ /* Freestyle Script, Mistral, Monotype Corsiva */
 h2, h3 { font-family: Georgia, 'Times New Roman', Times, serif; }
 
 /* push all text from left */
-header, footer {
+header {
   padding-left: 1rem;
 }
 
@@ -42,7 +42,8 @@ article { width: 100%; }
 
 .section {
   margin: 0 auto;
-  width: 90%;
+  padding: 0 1rem;
+  /* width: 90%; */
   margin-bottom: 5em;
 }
 
@@ -59,7 +60,7 @@ img.link {
   border-radius: 25px;
 }
 
-#contact {
+#contact, footer {
   text-align: center;
 }
 .contacts {
