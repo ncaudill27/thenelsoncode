@@ -91,8 +91,27 @@ article { width: 100%; }
   p { font-size: 1.2rem; }
   footer { font-size: 0.85rem; }
 
+  .section {
+    width: 100%;
+  }
+  
+  .project {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "info links";
+  }
+
+  .links {
+    grid-area: links;
+  }
+
+  .info {
+    grid-area: info;
+    padding-right: 1em;
+  }
+  
   .link {
-    width: 50%;
+    width: 80%;
   }
 
   .contacts {
@@ -102,7 +121,7 @@ article { width: 100%; }
   #me {
     max-width: 40%;
   }
-  .logo {
+  /* .logo {
     height: 4.75rem;
-  }
+  } */
 }
