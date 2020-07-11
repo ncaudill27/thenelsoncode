@@ -50,6 +50,10 @@ article { width: 100%; }
   margin-bottom: 5em;
 }
 
+#about p {
+  max-width: 443px; /* prevent lines spreading thin */
+}
+
 .project {
   margin-bottom: 3em;
 }
@@ -79,9 +83,9 @@ article { width: 100%; }
 }
 .contacts {
   margin: 0 auto;
-  /* max-width: 50%; */ /* add this rule for portrait mode */
+  max-width: 342px; /* prevent over-spreading */
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .youtube {
@@ -105,7 +109,7 @@ article { width: 100%; }
   h3 { font-size: 2.75rem; margin-bottom: 0.25em }
   h4 { font-size: 1.15rem; }
   p { font-size: 1.2rem; }
-  footer { font-size: 0.85rem; }
+  footer { font-size: 0.65rem; }
 
   /* split projects into two sections */
   .project {
@@ -128,7 +132,7 @@ article { width: 100%; }
     text-align: right;
   }
 
-  .contacts {
+  /* .contacts {
     max-width: 80%;
-  }
+  } */
 }
