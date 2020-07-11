@@ -98,7 +98,7 @@ article { width: 100%; }
 
   /* keep content tighter and centered */
   article {
-    max-width: 95%;
+    max-width: 85%;
     margin: 0 auto;
   }
   
@@ -131,8 +131,24 @@ article { width: 100%; }
     padding-top: 1.25em; /* bring inline with top of left side*/
     text-align: right;
   }
+}
 
-  /* .contacts {
-    max-width: 80%;
-  } */
+@media (min-width: 1201px) {
+
+    /* increased font sizes */
+    header a { font-size: 0.7rem; }
+    h1 { font-size: 3.75rem; }
+    h2 { font-size: 3.25rem; }
+    h3 { font-size: 2.75rem; margin-bottom: 0.25em }
+    h4 { font-size: 1.15rem; }
+    p { font-size: 1.2rem; }
+    footer { font-size: 0.65rem; }
+  
+    .links {
+      display: flex;
+    }
+
+    .link {
+      width: 50%;
+    }
 }
