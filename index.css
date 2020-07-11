@@ -82,6 +82,11 @@ article { width: 100%; }
 /* tablets and smaller laptops */
 @media (min-width: 481px) and (max-width: 1200px) {
 
+  article {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  
   /* increased font sizes */
   header a { font-size: 0.7rem; }
   h1 { font-size: 3.75rem; }
@@ -95,11 +100,14 @@ article { width: 100%; }
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-areas: "info links";
+    align-content: space-between;
   }
 
   .links {
     grid-area: links;
-    padding-top: 3em;
+    padding-top: 1em;
+    text-align: right;
+    justify-content: right;
   }
 
   .info {
@@ -108,7 +116,8 @@ article { width: 100%; }
   }
   
   .link {
-    width: 80%;
+    width: 100%;
+    padding-left: 5%;
   }
 
   .contacts {
@@ -116,7 +125,7 @@ article { width: 100%; }
   }
 
   #me {
-    max-width: 40%;
+    max-width: 250px;
   }
   /* .logo {
     height: 4.75rem;
