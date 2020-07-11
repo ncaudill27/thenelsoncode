@@ -54,6 +54,10 @@ article { width: 100%; }
   margin-bottom: 3em;
 }
 
+.links {
+  margin: 0 auto;
+}
+
 .link {
   width: 100%;
 }
@@ -67,6 +71,7 @@ article { width: 100%; }
 #me {
   width: 50%;
   border-radius: 25px;
+  max-width: 200px;
 }
 
 #contact, footer {
@@ -79,11 +84,17 @@ article { width: 100%; }
   justify-content: space-around;
 }
 
+.youtube {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
 /* tablets and smaller laptops */
 @media (min-width: 481px) and (max-width: 1200px) {
 
+  /* keep content tighter and centered */
   article {
-    max-width: 90%;
+    max-width: 95%;
     margin: 0 auto;
   }
   
@@ -96,38 +107,28 @@ article { width: 100%; }
   p { font-size: 1.2rem; }
   footer { font-size: 0.85rem; }
 
+  /* split projects into two sections */
   .project {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-areas: "info links";
     align-content: space-between;
   }
-
-  .links {
-    grid-area: links;
-    padding-top: 1em;
-    text-align: right;
-    justify-content: right;
-  }
-
+  
+  /* push left side content from center */
   .info {
     grid-area: info;
     padding-right: 2em;
   }
-  
-  .link {
-    width: 100%;
-    padding-left: 5%;
+
+  /* align right side content */
+  .links {
+    grid-area: links;
+    padding-top: 1.25em; /* bring inline with top of left side*/
+    text-align: right;
   }
 
   .contacts {
     max-width: 80%;
   }
-
-  #me {
-    max-width: 250px;
-  }
-  /* .logo {
-    height: 4.75rem;
-  } */
 }
