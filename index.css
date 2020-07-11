@@ -94,21 +94,22 @@ article { width: 100%; }
 }
 
 /* tablets and smaller laptops */
-@media (min-width: 481px) and (max-width: 1200px) {
+/* and (max-width: 1200px) */
+@media (min-width: 481px)  {
 
-  /* keep content tighter and centered */
+  /* ensure one large column after 805px */
   article {
-    max-width: 85%;
+    max-width: 805px;
     margin: 0 auto;
   }
-  
+
   /* increased font sizes */
   header a { font-size: 0.7rem; }
-  h1 { font-size: 3.75rem; }
-  h2 { font-size: 3.25rem; }
-  h3 { font-size: 2.75rem; margin-bottom: 0.25em }
+  h1 { font-size: 3.5rem; }
+  h2 { font-size: 2.75rem; }
+  h3 { font-size: 2.25rem; margin-bottom: 0.25em }
   h4 { font-size: 1.15rem; }
-  p { font-size: 1.2rem; }
+  p { font-size: 1.1rem; }
   footer { font-size: 0.65rem; }
 
   /* split projects into two sections */
@@ -118,7 +119,7 @@ article { width: 100%; }
     grid-template-areas: "info links";
     align-content: space-between;
   }
-  
+
   /* push left side content from center */
   .info {
     grid-area: info;
@@ -135,20 +136,5 @@ article { width: 100%; }
 
 @media (min-width: 1201px) {
 
-    /* increased font sizes */
-    header a { font-size: 0.7rem; }
-    h1 { font-size: 3.75rem; }
-    h2 { font-size: 3.25rem; }
-    h3 { font-size: 2.75rem; margin-bottom: 0.25em }
-    h4 { font-size: 1.15rem; }
-    p { font-size: 1.2rem; }
-    footer { font-size: 0.65rem; }
-  
-    .links {
-      display: flex;
-    }
 
-    .link {
-      width: 50%;
-    }
 }
