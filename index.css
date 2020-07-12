@@ -41,7 +41,6 @@ h1 { font-size: 2.25rem; }
 h2 { font-size: 1.85rem; }
 h3 { font-size: 1.3rem; margin-bottom: 0.25em }
 h4 { margin-bottom: 0.25em; }
-.links h4 { margin-bottom: 6.2px; }
 p { line-height: 1.3; margin-bottom: 0.1em; }
 h4 + p { margin-top: -0.1rem; } /* keep content close to header */
 /* ensure equal line spacing through lists */
@@ -77,29 +76,59 @@ article { width: 100%; }
   width: auto;
 }
 
-/* contact me photo */
-#me {
-  width: 50%;
-  border-radius: 25px;
-  max-width: 200px;
+.youtube {
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 #contact, footer {
   text-align: center;
 }
 
-.contacts {
-  margin: 0 auto;
-  width: 90%;
-  max-width: 342px; /* prevent over-spreading */
-  display: flex;
-  justify-content: space-between;
+/* contact me photo */
+#me {
+  border-radius: 25px;
+  width: 100%;
+  max-width: 200px;
 }
 
-.youtube {
-  max-width: 300px;
+#contacts {
   margin: 0 auto;
+  display: grid;
+  max-width: 400px; /* prevent over-spreading */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
+
+/* top left cell */
+#email {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+/* center 4 cells */
+#me {
+  grid-column: 2 / 4;
+  grid-row: 1 / 3;
+  align-self: flex-end;
+
+}
+
+#twitter {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+#linkedin {
+  grid-column: 4 / 5;
+  grid-row: 1 / 2;
+}
+
+#github {
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
+}
+
 
 /*
   begin new design for
