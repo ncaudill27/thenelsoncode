@@ -208,7 +208,7 @@ article { width: 100%; }
 
   #contact {
     grid-area: about;
-    margin-top: 400px;
+    margin-top: 500px;
     width: 100%;
   }
 }
