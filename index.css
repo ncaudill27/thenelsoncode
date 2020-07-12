@@ -5,7 +5,8 @@ body { font-size: 16px; margin: 0; width: 100%; }
 
 /* base colors */
 body { color: #000; }
-h1, h2 { color: #696969; } /* DimGray */
+h1 { color: rgb(216, 216, 216); }
+h2 { color: #696969; } /* DimGray */
 footer, footer a { color: #A9A9A9; }
 header a { color: #cccccc; }
 
@@ -15,7 +16,7 @@ header {
   background-image: url(/19366.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0% 25%;
+  background-position: 0% 56%;
 }
 
 /* header background image attribution tag */
@@ -32,15 +33,17 @@ footer { font-size: 0.55rem; padding-bottom: 1em; }
 /* standard fonts */
 h1 { font-family: cursive; } /* Microsoft Standard Script/Cursive */ /* Freestyle Script, Mistral, Monotype Corsiva */
 h2, h3 { font-family: Georgia, 'Times New Roman', Times, serif; }
-h4, p { font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+h4, p, li { font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
 /* ##### mobile specific style ##### */
 
-/* headlines */
+/* font sizes / spacing */
 h1 { font-size: 2.25rem; }
 h2 { font-size: 1.85rem; }
-h3 { font-size: 1.6rem; margin-bottom: 0.25em }
+h3 { font-size: 1.3rem; margin-bottom: 0.25em }
 h4 { margin-bottom: 0.25em; }
-
+p { line-height: 1.3; margin-bottom: 0.25em; }
+h4 + p { margin-top: -0.1rem; }
+ol { padding-left: 1em; margin: 0;}
 /* article */
 article { width: 100%; }
 
@@ -67,7 +70,7 @@ article { width: 100%; }
 }
 
 .logo {
-  height: 3.5rem;
+  height: 3rem;
   width: auto;
 }
 
@@ -83,6 +86,7 @@ article { width: 100%; }
 }
 .contacts {
   margin: 0 auto;
+  width: 90%;
   max-width: 342px; /* prevent over-spreading */
   display: flex;
   justify-content: space-between;
@@ -108,9 +112,13 @@ article { width: 100%; }
   h1 { font-size: 3.5rem; }
   h2 { font-size: 2.75rem; }
   h3 { font-size: 2.25rem; margin-bottom: 0.25em }
-  h4 { font-size: 1.15rem; }
+  h4 { font-size: 1.2rem; }
   p { font-size: 1.1rem; }
   footer { font-size: 0.65rem; }
+
+  .logo {
+    height: 3.5em;
+  }
 
   /* split projects into two sections */
   .project {
