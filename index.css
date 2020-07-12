@@ -136,5 +136,27 @@ article { width: 100%; }
 
 @media (min-width: 1201px) {
 
+  article {
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-template-areas: "about projects";
+  }
 
+  #about {
+    grid-area: about;
+  }
+
+  #about h2 { text-align: center; }
+
+  #projects {
+    grid-area: projects;
+    padding-left: 5em;
+  }
+
+  #contact {
+    grid-area: about;
+    margin-top: 400px;
+    width: 100%;
+  }
 }
