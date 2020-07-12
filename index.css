@@ -86,6 +86,7 @@ article { width: 100%; }
 #contact, footer {
   text-align: center;
 }
+
 .contacts {
   margin: 0 auto;
   width: 90%;
@@ -117,7 +118,6 @@ article { width: 100%; }
   h2 { font-size: 2.75rem; }
   h3 { font-size: 2.25rem; margin-bottom: 0.25em }
   h4 { font-size: 1.2rem; }
-  p, li { font-size: 1.1rem; }
   footer { font-size: 0.65rem; }
 
   .logo {
