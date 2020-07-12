@@ -41,6 +41,7 @@ h1 { font-size: 2.25rem; }
 h2 { font-size: 1.85rem; }
 h3 { font-size: 1.3rem; margin-bottom: 0.25em }
 h4 { margin-bottom: 0.25em; }
+.links h4 { margin-bottom: 6.2px; }
 p { line-height: 1.3; margin-bottom: 0.1em; }
 h4 + p { margin-top: -0.1rem; } /* keep content close to header */
 /* ensure equal line spacing through lists */
@@ -141,7 +142,7 @@ article { width: 100%; }
   /* align right side content */
   .links {
     grid-area: links;
-    padding-top: 1.25em; /* bring inline with top of left side*/
+    padding-top: 4.9em; /* bring inline with top of left side*/
     text-align: right;
   }
 }
