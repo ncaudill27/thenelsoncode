@@ -39,6 +39,7 @@ h4, p, li { font-family: 'Montserrat', sans-serif; }
 h2 { font-weight: 700; }
 h3 { font-weight: 600; }
 h4 { font-weight: 700; }
+
 /* ##### mobile specific style ##### */
 
 /* font sizes / spacing */
@@ -65,7 +66,10 @@ article {
 }
 
 .project {
-  margin-bottom: 3em;
+  margin: 0 -1.5em; /* remove width limits */
+  margin-bottom: 2em;
+  padding: 0.5em 1.5em 1.5em 1.5em; /* add limits back with color */
+  background-color: rgb(241, 241, 241);
 }
 
 .links {
