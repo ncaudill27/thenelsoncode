@@ -72,6 +72,10 @@ article {
   background-color: rgb(241, 241, 241);
 }
 
+.info {
+  margin-bottom: 3em;
+}
+
 .links {
   margin: 0 auto;
 }
@@ -210,7 +214,8 @@ article {
   #projects {
     background-color: rgb(241, 241, 241);
     grid-area: projects;
-    margin-left: 5em;
+    margin-left: 3em;
+    padding-left: 3em;
   }
 
   #contact {
