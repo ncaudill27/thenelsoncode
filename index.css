@@ -33,7 +33,7 @@ footer { font-size: 0.55rem; padding-bottom: 1em; }
 /* standard fonts */
 h1 { font-family: 'Share Tech Mono', monospace; } /* Microsoft Standard Script/Cursive */ /* Freestyle Script, Mistral, Monotype Corsiva */
 h2, h3 { font-family: 'Fira Code', monospace; }
-h4, p, li { font-family: 'Libre Baskerville', serif; }
+h4, p, li { font-family: 'Montserrat', sans-serif; }
 
 /* font weights */
 h2 { font-weight: 700; }
@@ -51,10 +51,10 @@ h4 + p { margin-top: -0.1rem; } /* keep content close to header */
 /* ensure equal line spacing through lists */
 ol { margin: 0.3em 0; }
 li { margin-bottom: 0.3em; }
-/* article */
-article { width: 100%; }
+/* main */
+main { width: 100%; }
 
-.section {
+article {
   margin: 0 auto;
   padding: 0 1.5em;
   margin-bottom: 5em;
@@ -141,7 +141,7 @@ article { width: 100%; }
 @media (min-width: 481px)  {
 
   /* ensure one large column after 805px */
-  article {
+  main {
     max-width: 805px;
     margin: 0 auto;
   }
@@ -190,7 +190,7 @@ article { width: 100%; }
  */
 @media (min-width: 1201px) {
 
-  article {
+  main {
     max-width: 100%;
     display: grid;
     grid-template-columns: 30% 1fr;
