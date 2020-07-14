@@ -145,6 +145,8 @@ article {
   display: none;
 }
 
+input[type="text"], textarea { width: 100%; }
+input { height: 2em; }
 /*
   begin new design for
   tablets and smaller laptops
@@ -204,10 +206,13 @@ article {
   main {
     max-width: 100%;
     display: grid;
-    grid-template-columns: 30% 1fr;
-    grid-template-areas: "about projects";
+    grid-template-areas:
+    "about projects"
+    "contact projects"
+    "form projects"
+    "space projects";
   }
-
+  
   #about {
     grid-area: about;
   }
@@ -217,13 +222,13 @@ article {
   #projects {
     background-color: rgb(241, 241, 241);
     grid-area: projects;
-    margin-left: 3em;
-    padding-left: 3em;
   }
 
   #contact {
-    grid-area: about;
-    margin-top: 600px;
-    width: 100%;
+    grid-area: contact;
+  }
+
+  #form {
+    grid-area: form;
   }
 }
