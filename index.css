@@ -141,6 +141,9 @@ article {
   grid-row: 2 / 3;
 }
 
+.hidden {
+  display: none;
+}
 
 /*
   begin new design for
