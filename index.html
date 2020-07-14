@@ -107,14 +107,13 @@
         </div>
       </article>
       <article id="form">
-        <form name="email" action="POST" netlify-honeypot="gotta-be-quicker-than-that" netlify>
+        <form class="hidden" name="email" action="POST" netlify-honeypot="gotta-be-quicker-than-that" data-netlify="true">
           <div class="hidden">
             <label>Ooh you almost had it... <input name="gotta-be-quicker-than-that" /></label>
           </div>
           <label for="name">Name <input id="name" type="text" name="name" /></label>
           <label for="email">Return email <input id="email" type="text" name="email" /></label>
           <label for="message">Message <br /><textarea id="message" name="email" rows="10"></textarea></label>
-          <div data-netlify-recaptcha="true"></div>
           <input type="submit" value="Send email" />
         </form>
       </article>

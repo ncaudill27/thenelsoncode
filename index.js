@@ -3,7 +3,7 @@ const email = document.getElementById('email');
 const emailImg = email.lastElementChild;
 
 const showEmailForm = () => {
-  // form.removeAttribute('class');
+  form.removeAttribute('class');
   focusForm();
   bringToCenter();
 };
