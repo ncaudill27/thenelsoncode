@@ -141,10 +141,6 @@ article {
   grid-row: 2 / 3;
 }
 
-.hidden {
-  display: none;
-}
-
 #form {
   max-width: 300px;
 }
@@ -155,6 +151,11 @@ input { height: 2em; margin-bottom: 1em; }
   begin new design for
   tablets and smaller laptops
 */
+
+.hidden {
+  display: none;
+}
+
 @media (min-width: 481px)  {
 
   /* ensure one large column after 805px */
