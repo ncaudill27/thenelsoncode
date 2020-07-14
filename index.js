@@ -5,11 +5,10 @@ const emailImg = email.lastElementChild;
 const showEmailForm = () => {
   form.removeAttribute('class');
   focusForm();
+  bringToCenter();
 };
 const focusForm = () => form.querySelectorAll('input')[1].focus();
 
 emailImg.addEventListener('click', showEmailForm);
 
-const bringToCenter = () => {
-  const center = window.heigh
-}
+const bringToCenter = () => form.scrollIntoView();
