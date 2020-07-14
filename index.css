@@ -32,7 +32,7 @@ header a {
 /* standard fonts */
 h1 { font-family: 'Share Tech Mono', monospace; } /* Microsoft Standard Script/Cursive */ /* Freestyle Script, Mistral, Monotype Corsiva */
 h2, h3 { font-family: 'Fira Code', monospace; }
-h4, p, li { font-family: 'Montserrat', sans-serif; }
+h4, p, li, input, label { font-family: 'Montserrat', sans-serif; }
 
 /* font weights */
 h2 { font-weight: 700; }
@@ -143,6 +143,10 @@ article {
 
 .hidden {
   display: none;
+}
+
+#form {
+  max-width: 300px;
 }
 
 input[type="text"], textarea { width: 100%; }
