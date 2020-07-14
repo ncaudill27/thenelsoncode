@@ -7,8 +7,9 @@ const showEmailForm = () => {
   focusForm();
   bringToCenter();
 };
+
 const focusForm = () => form.querySelectorAll('input')[1].focus();
 
-emailImg.addEventListener('click', showEmailForm);
+const bringToCenter = () => form.scrollIntoView({behavior: 'smooth', block: 'center'});
 
-const bringToCenter = () => form.scrollIntoView();
+emailImg.addEventListener('click', showEmailForm);
